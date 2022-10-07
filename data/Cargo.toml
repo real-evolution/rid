@@ -4,4 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-diesel_async = "^0.1"
+sea-orm = { version = "^0", features = [
+  "sqlx-postgres",
+  "runtime-actix-rustls",
+  "macros",
+] }
