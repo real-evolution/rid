@@ -5,7 +5,10 @@ edition = "2021"
 authors = ["Ayman Al-Qadhi <alqd@protonmail.com>"]
 
 [workspace]
-members = [ "data", "data/migration", "data/entity" ]
+members = ["data", "data/migration", "data/entity"]
+
+[workspace.dependencies]
+uuid = { name = "1.2.0" }
 
 [dependencies]
 data = { path = "./data" }
