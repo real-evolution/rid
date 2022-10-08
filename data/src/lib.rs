@@ -1,2 +1,3 @@
-pub mod repos;
 pub mod error;
+pub mod models;
+pub mod repos;
