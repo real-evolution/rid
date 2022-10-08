@@ -1,5 +1,7 @@
 use super::repo::Repo;
 
-pub trait UsersRepo : Repo {
+use entity::user::Entity as User;
 
-}
+use uuid::Uuid;
+
+pub trait UsersRepo: Repo<User, Uuid> {}
