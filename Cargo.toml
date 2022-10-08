@@ -1,8 +1,11 @@
 [package]
 name = "rid"
 version = "0.1.0"
-authors = ["Ayman Al-Qadhi <alqd@protonmail.com>"]
 edition = "2021"
+authors = ["Ayman Al-Qadhi <alqd@protonmail.com>"]
 
 [workspace]
-members = [ "data" ]
+members = [ "data", "data/migration", "data/entity" ]
+
+[dependencies]
+data = { path = "./data" }
