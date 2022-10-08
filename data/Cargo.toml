@@ -4,5 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+# workspace dependencies
 uuid = { workspace = true }
+async-trait = { workspace = true }
+
+# project-create dependencies
 entity = { path = "entity" }
+
+# crate dependencies
+sea-orm = { version = "^0" }
